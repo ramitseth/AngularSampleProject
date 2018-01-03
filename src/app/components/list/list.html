@@ -1,0 +1,11 @@
+<div class="baseMargin">
+    <div>
+        <h2>List of Users</h2>
+        <div ui-view="user"></div>
+    </div>
+
+    <div ng-show="adminTrigger">
+        <h2>List of Admins</h2>
+        <div ui-view="admin"></div>
+    </div>
+</div>

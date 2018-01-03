@@ -1,0 +1,78 @@
+<div class="baseMargin" ng-init="resetForm()">
+    <h3>
+        New User Form
+    </h3>
+
+    <form class="userBox">
+        <div class="fieldRow center">
+            User Registration Form
+        </div>
+        <div class="fieldRow">
+            <input autofocus ng-enter="focus('mobile')" placeholder="User Name" type="text" ng-model="newuser.name">
+        </div>
+        <div class="fieldRow">
+            <label class="myInput">Gender
+                <label>
+                    <input type="radio" ng-model="newuser.gender" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" ng-model="newuser.gender" value="female"> Female
+                </label>
+            </label>
+        </div>
+        <div class="fieldRow">
+            <label class="myInput">Profile Picture
+                <input type="file" ng-model="pic" ng-change="savePicture(pic)" accept="image/gif, image/jpeg, image/png">
+            </label>
+        </div>
+        <div class="fieldRow">
+            <label class="myInput">Date of Birth
+                <input type="date" ng-model="newuser.dob">
+            </label>
+        </div>
+        <div class="fieldRow">
+            <input ng-enter="focus('email')" id="mobile" placeholder="Mobile No." type="number" ng-model="newuser.mobile">
+        </div>
+        <div class="fieldRow">
+            <input ng-enter="focus('address')" id="email" placeholder="Email" type="text" ng-model="newuser.email">
+        </div>
+        <div class="fieldRow">
+            <textarea id="address" placeholder="Address" ng-model="newuser.address"></textarea>
+        </div>
+        <div class="fieldRow">
+            <input class="btn-default" value="Show/Hide Preview" type="button" ng-click="(hidePreviewBox) ? hidePreviewBox=false : hidePreviewBox=true">
+            <input class="btn-default" value="Reset Form" type="reset" ng-click="resetForm()">
+        </div>
+    </form>
+
+    <div class="previewBox" ng-hide="hidePreviewBox">
+        <div class="fieldRow center">
+            Preview
+        </div>
+        <img class="previewImage" ng-show="newuser.picture" ng-src="{{newuser.picture}}" height=150 width=150>
+        <div class="previewRow">
+            <div class="previewHeading">Name:</div>
+            <div class="inputBox">{{newuser.name}}</div>
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Gender:</div>
+            <div class="inputBox">{{newuser.gender}}</div>
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Date of Birth:</div>
+            <div class="inputBox">{{newuser.dob.toDateString().substring(4)}}</div>
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Mobile No: </div>
+            <div class="inputBox">{{newuser.mobile}}</div>
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Email: </div>
+            <div class="inputBox">{{newuser.email}}</div>
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Address: </div>
+            <p class="inputBox">{{newuser.address}}</p>
+        </div>
+    </div>
+</div>

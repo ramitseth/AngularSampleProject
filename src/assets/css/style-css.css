@@ -1,0 +1,43 @@
+.center {
+  text-align: center;
+}
+
+.baseMargin {
+  margin: 10px;
+}
+
+.userBox,
+.previewBox {
+  width: 30%;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 15px;
+  margin-left: 15px;
+  border: solid 1px #aaa;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 700px) {
+  .previewBox {
+    left: 40%;
+    position: fixed;
+  }
+}
+
+.previewImage {
+  float: right;
+  margin: 10px;
+}
+
+.btn-default {
+  margin: 0px 20px;
+  height: 30px;
+}
+
+table, th, td {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}

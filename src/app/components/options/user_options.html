@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>User ID</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Mobile</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in usersList">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.mobile}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

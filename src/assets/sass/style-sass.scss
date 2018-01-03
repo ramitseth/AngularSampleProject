@@ -1,0 +1,99 @@
+/* variables start here */
+
+$base-font-colour: #444;
+$zero: 0px;
+$light-gray-colour: #ddd;
+$dark-gray-colour: #999;
+
+/* variables end here */
+
+body {
+  color: $base-font-colour;
+  margin: $zero;
+}
+
+.headerBar {
+  height: 50px;
+  background-color: $light-gray-colour;
+}
+
+.item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menuItem {
+  @extend .item;
+  width: 80px;
+}
+
+.userItem {
+  @extend .item;
+  width: 200px;
+}
+
+.activeItem {
+  background-color: $dark-gray-colour;
+}
+
+.marginHeading {
+  margin: 50px $zero;
+}
+
+.inputBox {
+  display: block;
+  float: none;
+  height: 30px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.marginBottom {
+  margin-bottom: 15px;
+}
+
+.previewRow {
+  @extend .marginBottom;
+  width: 100%;
+  display: inline-flex;
+  .inputBox {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  p {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.previewHeading {
+  padding: 6px $zero;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.fieldRow {
+  @extend .marginBottom;
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  .myInput {
+    @extend .inputBox;
+    width: 90%;
+  }
+  textarea {
+    height: 100px;
+  }
+  input[type="file"],
+  input[type="date"] {
+    background-color: #fff;
+    display: inline-block;
+    max-width: 60%;
+    margin-left: 5%;
+  }
+  label {
+    padding: 6px 12px;
+    float: right;
+  }
+}

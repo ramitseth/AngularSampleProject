@@ -1,0 +1,13 @@
+<div class="baseMargin">
+    <h2>Home page</h2>
+    <div>
+        <div class="marginHeading">From here, you can switch between different roles</div>
+        <div class="userItem" ng-class="{activeItem:isAdmin}" ng-click="isAdmin = true;switchUser()">
+            <p class="center">Admin View</p>
+        </div>
+        <div class="userItem" ng-class="{activeItem:!isAdmin}" ng-click="isAdmin = false;switchUser()">
+            <p class="center">User View</p>
+        </div>
+    </div>
+
+</div>

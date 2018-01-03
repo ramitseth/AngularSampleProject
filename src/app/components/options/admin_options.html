@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Admin ID</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Mobile</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="admin in adminList">
+                <td>{{admin.id}}</td>
+                <td>{{admin.name}}</td>
+                <td>{{admin.email}}</td>
+                <td>{{admin.mobile}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

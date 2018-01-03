@@ -1,0 +1,80 @@
+/* variables start here */
+/* variables end here */
+body {
+  color: #444;
+  margin: 0px; }
+
+.headerBar {
+  height: 50px;
+  background-color: #ddd; }
+
+.item, .menuItem, .userItem {
+  display: inline-block;
+  cursor: pointer; }
+
+.menuItem {
+  width: 80px; }
+
+.userItem {
+  width: 200px; }
+
+.activeItem {
+  background-color: #999; }
+
+.marginHeading {
+  margin: 50px 0px; }
+
+.inputBox, .fieldRow input[type="text"],
+.fieldRow input[type="number"],
+.fieldRow textarea,
+.fieldRow .myInput {
+  display: block;
+  float: none;
+  height: 30px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+.marginBottom, .previewRow, .fieldRow {
+  margin-bottom: 15px; }
+
+.previewRow {
+  width: 100%;
+  display: inline-flex; }
+  .previewRow .inputBox, .previewRow .fieldRow input[type="text"], .fieldRow .previewRow input[type="text"], .previewRow
+  .fieldRow input[type="number"],
+  .fieldRow .previewRow input[type="number"], .previewRow
+  .fieldRow textarea,
+  .fieldRow .previewRow textarea, .previewRow
+  .fieldRow .myInput,
+  .fieldRow .previewRow .myInput {
+    flex: 0 0 60%;
+    max-width: 60%; }
+  .previewRow p {
+    overflow-x: auto;
+    overflow-y: hidden; }
+
+.previewHeading {
+  padding: 6px 0px;
+  flex: 0 0 30%;
+  max-width: 30%; }
+
+.fieldRow input[type="text"],
+.fieldRow input[type="number"],
+.fieldRow textarea,
+.fieldRow .myInput {
+  width: 90%; }
+
+.fieldRow textarea {
+  height: 100px; }
+
+.fieldRow input[type="file"],
+.fieldRow input[type="date"] {
+  background-color: #fff;
+  display: inline-block;
+  max-width: 60%;
+  margin-left: 5%; }
+
+.fieldRow label {
+  padding: 6px 12px;
+  float: right; }
