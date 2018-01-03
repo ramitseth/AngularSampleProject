@@ -8,11 +8,8 @@
   "homepage": "https://github.com/ramitseth",
   "dependencies": {
     "angular": "^1.6.8",
-    "angular-animate": "^1.6.8",
     "angular-aria": "^1.6.8",
-    "angular-cookies": "^1.6.8",
     "angular-loader": "^1.6.8",
-    "angular-mocks": "^1.6.8",
     "angular-resource": "^1.6.8",
     "angular-sanitize": "^1.6.8",
     "angular-touch": "^1.6.8",
